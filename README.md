@@ -6,6 +6,8 @@ ZSS Skills Test
 
 2. Additional Stuff I would have done
    - Create a CRUD Repository to manage all CRUD Operations.
+   - Exception handling and Custom Error Messages
+   - Tests for Book and Category
    
 3. Instructions to run the application
    - Edit the application.properties file. Add the server.port, database name, username and password;
@@ -17,4 +19,4 @@ ZSS Skills Test
 
 4. Things Not Completed
    - ability to purchase a book by integrating with a simple mock API
-   - Not enough time to research on how its done as I am new to Java Spring [Mostly an Angular and Laravel Developer]
+   - Not enough time to research on how its done as I am new to Java Spring.

@@ -43,6 +43,10 @@ public class CategoryService {
     }
 
     public void deleteCategory(Long id) {
+        Optional<Category> exists = this.categoryRepository.findById(id);
+        if (exists.isEmpty()) {
+            throw new IllegalStateException("Category does not exist");
+        }
         this.categoryRepository.deleteById(id);
     }
 }

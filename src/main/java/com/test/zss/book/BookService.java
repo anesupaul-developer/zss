@@ -47,6 +47,11 @@ public class BookService {
     }
 
     public void deleteBook(Long id) {
+        Optional<Book> exists = this.bookRepository.findById(id);
+        if (exists.isEmpty()) {
+            throw new IllegalStateException("Book does not exist");
+        }
         this.bookRepository.deleteById(id);
     }
 }
+
